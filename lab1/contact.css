@@ -1,0 +1,66 @@
+h1 {
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.nav:hover {
+    transform: scale(1.5);
+    color: red;
+}
+
+
+form {
+    text-align: center;
+    background-color: rgb(190, 84, 84);
+    width: 50px;
+}
+
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+#foot {
+    display: flex;
+    justify-content: center;
+}
+
+#googleform {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#main {
+    background-color: rgb(26, 26, 121);
+}
+
+footer {
+    background-color: black;
+}
+
+#footerp {
+    color: grey;
+}
+
+body {
+    background-color: black;
+}
