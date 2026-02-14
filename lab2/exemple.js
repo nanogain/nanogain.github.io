@@ -13,8 +13,9 @@ let loose = 0;
 let numberOfAttempt = 0;
 
 function guess() {
+    numberOfAttempt += 1;
     if (guessInput.value == n) {
-        numberOfAttempt += 1;
+        //numberOfAttempt += 1;
         if (numberOfAttempt <= 7) {
             guessResult.textContent = "Congratulation you guessed within 7 attempts!";
             win += 1;
@@ -27,22 +28,26 @@ function guess() {
         document.body.style.backgroundColor = "green";
         score.textContent = "win: " + win + " | loose: " + loose;
     }
-    else if (numberOfAttempt >= 7) {
-        document.body.style.backgroundColor = "red";
-        guessResult.textContent = "You lost, wright number: " + n;
-        guessButton.disabled = true;
-    }
-    else {
-        guessResult.textContent = "wrong number";
-        document.body.style.backgroundColor = "red";
-        if (guessInput.value < n) {
-            guessTry.textContent = "guess low";
+    else{
+        if (numberOfAttempt >= 7){ 
+            document.body.style.backgroundColor = "red";
+            guessResult.textContent = "You lost, wright number: " + n;
+            guessButton.disabled = true;
         }
+    
         else {
-            guessTry.textContent = "guess high";
-        }
+            guessResult.textContent = "wrong number";
+            document.body.style.backgroundColor = "red";
+            if (guessInput.value < n) {
+                guessTry.textContent = "guess low";
+            }
+            else {
+                guessTry.textContent = "guess high";
+            }
+            
         guessAttempt.textContent += guessInput.value + ", ";
-        numberOfAttempt += 1;
+        //numberOfAttempt += 1;
+        }
     }
 
 }
@@ -59,3 +64,4 @@ function reset() {
 guessButton.addEventListener("click", guess);
 
 resetButton.addEventListener("click", reset);
+
