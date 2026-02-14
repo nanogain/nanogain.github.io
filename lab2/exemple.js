@@ -27,7 +27,7 @@ function guess() {
         document.body.style.backgroundColor = "green";
         score.textContent = "win: " + win + " | loose: " + loose;
     }
-    if (numberOfAttempt > 7) {
+    else if (numberOfAttempt >= 7) {
         document.body.style.backgroundColor = "red";
         guessResult.textContent = "You lost, wright number: " + n;
         guessButton.disabled = true;
@@ -57,4 +57,5 @@ function reset() {
     guessButton.disabled = false;
 }
 guessButton.addEventListener("click", guess);
+
 resetButton.addEventListener("click", reset);
