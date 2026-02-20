@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Welcome to BlackJack!</h1>
+    <div id="credit" class="score"></div>
+    <div id="score" class="score"></div>
+    <div id="bestScore" class="score"></div>
+    <hr>
+    <div id="main">
+        <span class="score">Mise : </span><input type="number" id="mise" min="1"><span id="validateMise"
+            class="score"></span>
+        <div id="card"></div>
+        <div id="playedCard"></div>
+        <button id="start" type="button">Start a new game</button>
+        <button id="pickcard" type="button">Pick a card</button>
+        <button id="rest" type="button">Rest</button>
+        <h2 id="message"></h2>
+        <button id="reset" type="button">Reset Game</button>
+    </div>
+</body>
+
+</html>
