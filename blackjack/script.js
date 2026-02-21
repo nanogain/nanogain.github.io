@@ -201,7 +201,7 @@ function reset() {
     div.appendChild(carte);
     document.querySelector("#playedCard").innerHTML = "";
     document.querySelector("#message").textContent = "";
-    document.querySelector("#mise").value = "";
+    document.querySelector("#mise").value = "10";
     document.querySelector("#mise").style.display = "";
     document.querySelector("#validateMise").textContent = "";
     startBtn.style.display = "";
@@ -214,6 +214,7 @@ function reset() {
     document.querySelector("#credit").textContent = "Your credits: " + credits;
     document.querySelector("#score").textContent = "Your score: " + score;
     document.querySelector("#bestScore").textContent = "Your best score: " + bestScore;
+
 
 
 }
