@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #e4ecf5);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#fieldset {
+    justify-self: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#legend {
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #444;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+span {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#submit:active {
+    transform: scale(0.98);
+}
+
+input[type="password"] {
+    letter-spacing: 2px;
+}
+
+#username {
+    border-left: 4px solid #3498db;
+}
+
+#zipcode {
+    border-left: 4px solid #e67e22;
+}
+
+#suggestedPassword {
+    color: #27ae60;
+}
+
+#city,
+#latitude,
+#longitude {
+    color: #555;
+}
+
+fieldset br {
+    line-height: 1.5;
+}
+
+fieldset {
+    transition: transform 0.3s;
+}
+
+fieldset:hover {
+    transform: translateY(-3px);
+}
+
+input::placeholder {
+    color: #aaa;
+}
